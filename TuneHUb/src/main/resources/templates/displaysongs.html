@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html "https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="display.css">
+</head>
+<body>
+<!-- <table border="1">
+    <tr>
+    <th>Song Name</th>
+    <th>Song Artist</th>
+    <th>Song Genre</th>
+    <th>Play</th>
+    </tr>
+    <tr th:each="songs:${songs}">
+    <td th:text="${songs.name}"></td>
+    <td th:text="${songs.artist}"></td>
+    <td th:text="${songs.genre}"></td>
+    
+    <td th:utext="${songs.link}"></td>
+    </tr>
+    
+    <td>
+    <audio controls>
+    <source th:src="${songs.link}">
+    </audio>
+    </td>
+    </tr>
+    </table> -->
+    
+<h1>WELCOME TO UR MUSIC ENJOY UR MUSIC!!!</h1>
+<form action="payment-success">
+    <div id="title" th:each="songs:${songs}" class="playlist-container">
+        <p th:text="${songs.name}"></p>
+        <p th:text="${songs.artist}"></p>
+        <p th:text="${songs.genre}"></p>
+        <p th:utext="${songs.link}"></p>
+        
+        <audio controls>
+    <source th:src="${songs.link}">
+    </audio>
+        
+    </div>
+</form>
+
+    
+</body>
+</html>

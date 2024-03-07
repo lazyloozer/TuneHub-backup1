@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #b62020;
+}
+
+.playlist-container {
+  background-color: #fff;
+  background-image: url(https://i.pinimg.com/564x/2e/90/6d/2e906dbffad4d626d4cc3f84724a1e58.jpg);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-style: oblique;
+  color: #dba512;
+}
+
+.playlist-container p {
+  margin: 5px 0;
+}
+
+.song-title {
+  font-weight: bold;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: darkblue;
+}
